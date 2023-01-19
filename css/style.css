@@ -1,0 +1,660 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+}
+
+.container {
+    max-width: 1064px;
+    font-family: "Nunito Sans";
+    margin-left: 160px;
+    margin-right: 160px;
+    position: relative;
+    justify-content:center ;
+    z-index: 2;
+
+}
+
+.background-photo {
+    background-image: url("../images/image.png");
+    background-position: center;
+    background-size: cover;
+    margin 0 auto;
+    height: 95vh;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+
+
+}
+
+.header__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color:white;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 47px;
+    text-decoration: none;
+}
+.header__logo img {
+    width: 31px;
+    height: 35px;
+    translate: -10px 0;
+
+}
+.header__logo span{
+    color: #ff0000;
+    font-weight: 800;
+}
+
+.container h1 {
+    color:white;
+    font-size: 90px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight:900;
+    height: 123px;
+    margin-bottom: 10px;
+    margin-top: 164px;
+}
+
+.container article {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    height: 44px;
+    text-align: center;
+}
+
+.container nav {
+    height: 88px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+
+}
+
+.header__menu a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 22px;
+    padding:33px;
+}
+
+.header__menu a:hover {
+    color:red;
+    background-color: #FFFFFF33;
+}
+
+
+.container-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.background-photo::after {
+    content: "";
+    background-color: #000000;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.3;
+    z-index: 1;
+
+}
+
+.primary-btn, .secondary-btn {
+
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    padding-top:22px;
+    padding-bottom:22px;
+    padding-left: 55px;
+    padding-right: 55px;
+    border-radius: 40px;
+    box-shadow: 0 3px 6px #FF00004D;
+    border: none;
+    margin-top: 55px;
+
+}
+
+.primary-btn {
+    color: white;
+    background-color: red;
+    box-shadow: 0 3px 6px #FF00004D;
+    margin-right:12.5px ;
+}
+
+.secondary-btn {
+    color: red;
+    background-color: white;
+    margin-left: 12.5px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.primary-btn:hover, .secondary-btn:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+.container-menu-line {
+    border-bottom: 2px solid #00000066;
+}
+
+.primary-btn:hover {
+    background-color: darkgray;
+}
+
+.secondary-btn:hover {
+    background-color: darkgray;
+}
+
+.arrow {
+    background-color: red;
+    box-shadow: 0 3px 6px #FF00004D;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border:none;
+    margin-left:656px;
+    margin-right:656px;
+    margin-top:-25px;
+    z-index:3;
+    position: absolute;
+
+}
+
+.arrow:hover {
+    background-color: darkgray;
+}
+
+
+
+
+.second-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.second-container-header {
+    width:215px;
+    height: 47px;
+    position: relative;
+    display: block;
+
+
+}
+.second-container-header h2{
+    color: #000000;
+    font-family: "Nunito Sans";
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 47px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.second-container-header h2::before {
+    content: "";
+    width:50px;
+    height: 3px;
+    background-color: red;
+    box-shadow: 0 1px 6px #FF00004D;
+    border-radius: 8px;
+    background-size: cover;
+    position: absolute;
+    display: block;
+   transform: translate(0, 25px);
+
+}
+
+.second-container-header h2::after {
+    content: "";
+    width:50px;
+    height: 3px;
+    background-color: red;
+    box-shadow: 0 1px 6px #FF00004D;
+    border-radius: 8px;
+    background-size: cover;
+    position: absolute;
+    display: block;
+    transform: translate(163px, -26px);
+}
+
+.second-container-main {
+    height: 469px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 35px;
+
+}
+
+.second-container-section {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.second-container-section h2 {
+    color:#6A6A6A;
+    font-size: 19px;
+    line-height: 26px;
+    font-family: "Nunito Sans";
+
+}
+
+.second-container-section p {
+    color:#6A6A6A;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 19px;
+    font-family: "Nunito Sans";
+    margin-top:15px;
+    margin-bottom: 15px;
+
+}
+
+.second-container-section img {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.second-container-section button {
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    background-color: #FF0000;
+    box-shadow: 0 3px 6px #FF00004D;
+    color:#FFFFFF;
+    border-radius: 40px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.second-container-section button:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+.second-container-main {
+    margin-bottom: 100px;
+}
+
+.third-container-main {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top:75px;
+}
+
+.third-container-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.third-container-background {
+    background-color: #28272C;
+    background-size: cover;
+    height: 643px;
+}
+.third-container-header h2 {
+    font-size: 35px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    position: relative;
+    top:60px;
+
+}
+
+
+.third-container-header h2::before {
+    content:"";
+    width:50px;
+    height: 3px;
+    background-color: #FF0000;
+    box-shadow: 0 1px 6px #FF00004D;
+    border-radius: 8px;
+    position: absolute;
+    translate: -65px 20px;
+}
+
+.third-container-header h2::after {
+    content:"";
+    width:50px;
+    height: 3px;
+    background-color: #FF0000;
+    box-shadow: 0 1px 6px #FF00004D;
+    border-radius: 8px;
+    position: absolute;
+    translate: 20px 20px;
+}
+
+
+.third-container-section {
+     margin-top: 75px;
+}
+
+.third-container-section button {
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    background-color: #FF0000;
+    box-shadow: 0 3px 6px #FF00004D;
+    color:#FFFFFF;
+    border-radius: 40px;
+    border: none;
+    text-transform: uppercase;
+    margin-top:15px;
+}
+
+.third-container-section button:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+.third-container-section img {
+    margin-bottom: 15px;
+}
+
+.third-container-section h2 {
+    color:#FFFFFF;
+    font-family: "Nunito Sans";
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.third-container-section p {
+    color:#B2B2B2;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+}
+
+
+.fourth-container-header h2 {
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 47px;
+    position: relative;
+    top:60px;
+}
+
+.fourth-container-header h2::before {
+    content:"";
+    width:50px;
+    height: 3px;
+    background-color: #FF0000;
+    box-shadow: 0 1px 6px #FF00004D;
+    border-radius: 8px;
+    position: absolute;
+    translate: -65px 20px;
+}
+
+.fourth-container-header h2::after {
+    content:"";
+    width:50px;
+    height: 3px;
+    background-color: #FF0000;
+    box-shadow: 0 1px 6px #FF00004D;
+    border-radius: 8px;
+    position: absolute;
+    translate: 15px 20px;
+}
+
+.fourth-container-section {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 90px;
+}
+
+.fourth-container-section img {
+    width:444px;
+    height: 316.5px;
+}
+
+
+.fourth-container-section-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    width:50%;
+}
+
+input[type="text"], input[type="email"],
+textarea {
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border:  1px solid #D1D1D1;
+    width: 100%;
+    margin-bottom: 20px;
+    outline: none;
+
+    cursor: pointer;
+}
+input:focus, textarea:focus {
+    box-shadow: 0px 1px 6px #FF00004D;
+    border: 1px solid #FF0000;
+}
+
+textarea {
+    min-height: 140px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #B2B2B2;
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox {
+    cursor: pointer;
+    display: flex;
+}
+
+.checkbox span {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    flex-basis: 22px;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    margin-right: 10px;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.checkbox input:checked + span {
+    background-image: url("../images/Icon Check.svg");
+
+}
+
+label.checkbox  {
+    font-size: 10px;
+    line-height: 14px;
+    color:#B2B2B2;
+    font-family: "Nunito Sans";
+    font-weight: 300;
+
+}
+
+.btn {
+    width: 142px;
+    height: 40px;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 19px;
+    text-transform: uppercase;
+    color:#FF0000;
+    box-shadow: 0 3px 6px #FF00004D;
+    background-color: #FFFFFF;
+    border: 1px solid #FF0000;
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    padding-left: 52px;
+    padding-right: 52px;
+    margin-top:15px;
+    margin-bottom: 65px;
+    align-self: end;
+
+    cursor: pointer;
+
+}
+
+
+.btn:hover {
+    background: darkgray;
+}
+.btn:active {
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+}
+
+
+.fifth-container-background {
+    background: #28272C 0 0 no-repeat padding-box;
+    margin-top: 95px;
+}
+
+.footer-logo {
+    color: #FFFFFF;
+    font-family: "Nunito Sans";
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 34px;
+    margin:4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.footer-logo span {
+     color: red;
+     font-weight: 800;
+    padding-left:8px;
+
+}
+
+.fifth-container-logo {
+    padding-bottom:22px;
+}
+
+
+.fifth-container-logo img {
+    width: 16.45px;
+    height: 18.95px;
+    translate: -15px 35px;
+}
+
+.fifth-container-section-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-bottom: 39px;
+}
+
+.fifth-container-section a {
+    text-decoration: none;
+}
+.fifth-container-section-menu-first-list li  ,
+.fifth-container-section-menu-second-list li  {
+    list-style: none;
+}
+
+
+.fifth-container-section-menu-first-list li a ,
+.fifth-container-section-menu-second-list li a{
+    color:white;
+    font-family: "Nunito Sans";
+    font-weight: bold;
+    line-height: 19px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    padding: 7px;
+}
+
+.fifth-container-section-menu-first-list li a:hover,
+.fifth-container-section-menu-second-list li a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.fifth-container-section-menu-first-list ,
+.fifth-container-section-menu-second-list {
+    flex-grow: 1;
+    display:flex;
+    justify-content: flex-start;
+}
+
+.fifth-container-section-menu-third-list {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+}
+
+.fifth-container-section-menu-third-list div p {
+    color:#D1D1D1;
+    font-family: "Nunito Sans";
+
+    font-size: 12px;
+    font-weight: 300;
+
+}
