@@ -5,14 +5,12 @@
 }
 body {
     position: relative;
-
 }
 
 .container {
     max-width: 1064px;
     font-family: "Nunito Sans", "sans-serif";
-    margin-left: 160px;
-    margin-right: 160px;
+    margin: 0 auto;
     position: relative;
     justify-content:center;
     z-index: 2;
